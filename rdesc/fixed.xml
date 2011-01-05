@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_joystik<!-- Joystik (04h, application collection) --></usage>
+  <COLLECTION type="application">
+    <COLLECTION type="logical">
+      <!-- All fields are zero-based -->
+      <logical_minimum>0</logical_minimum>
+
+      <!-- Byte-sized fields from now on -->
+      <report_size>8</report_size>
+
+      <!-- Padding - seemingly unused bytes -->
+      <report_count>3</report_count>
+      <input>
+        <constant/>
+      </input>
+
+      <!-- D-pad axis -->
+      <logical_maximum>255</logical_maximum>
+      <report_count>2</report_count>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <input>
+        <variable/>
+      </input>
+
+      <!-- Bit-sized fields from now on -->
+      <report_size>1</report_size>
+
+      <!-- Padding - seemingly unused bits -->
+      <report_count>4</report_count>
+      <input>
+        <constant/>
+      </input>
+
+      <!-- Buttons -->
+      <logical_maximum>1</logical_maximum>
+      <report_count>10</report_count>
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>0A</usage_maximum>
+      <input>
+        <variable/>
+      </input>
+
+      <!-- Padding - seemingly unused bits -->
+      <report_count>10</report_count>
+      <input>
+        <constant/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
