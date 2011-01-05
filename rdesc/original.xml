@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_joystik<!-- Joystik (04h, application collection) --></usage>
+  <COLLECTION type="application">
+    <COLLECTION type="logical">
+      <report_size>8</report_size>
+      <report_count>5</report_count>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>255</logical_maximum>
+      <physical_minimum>0</physical_minimum>
+      <physical_maximum>255</physical_maximum>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <input>
+        <variable/>
+      </input>
+      <report_size>4</report_size>
+      <report_count>1</report_count>
+      <logical_maximum>7</logical_maximum>
+      <physical_maximum>315</physical_maximum>
+      <unit>
+        <english_rotation>
+          <degrees/>
+        </english_rotation>
+      </unit>
+      <usage>0</usage>
+      <input>
+        <variable/>
+        <null_state/>
+      </input>
+      <unit>
+        <none/>
+      </unit>
+      <report_size>1</report_size>
+      <report_count>10</report_count>
+      <logical_maximum>1</logical_maximum>
+      <physical_maximum>1</physical_maximum>
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>0A</usage_maximum>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+      <report_size>1</report_size>
+      <report_count>10</report_count>
+      <logical_maximum>1</logical_maximum>
+      <physical_maximum>1</physical_maximum>
+      <usage>01</usage>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+    <COLLECTION type="logical">
+      <report_size>8</report_size>
+      <report_count>4</report_count>
+      <physical_maximum>255</physical_maximum>
+      <logical_maximum>255</logical_maximum>
+      <usage>02</usage>
+      <output>
+        <variable/>
+      </output>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
